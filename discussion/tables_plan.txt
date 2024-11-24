@@ -1,0 +1,16 @@
+
+Tables 
+==========
+
+1. auth
+2. posts
+3. users
+4. otpVerification
+5. logger
+
+
+newly should be added
+***********************
+
+1.profile - id,first_name,last_name,user_name,email,password,mobile_number,gender,Role,address,block_status,interests
+2.posts - id,postName,postTitle,postImage,postDescription,profileName,profileImage,isLiked
