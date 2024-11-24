@@ -7,7 +7,7 @@ export default function Splash() {
 
   useEffect(() => {
     setTimeout(() => {
-      router?.navigate("/prelogin");
+      router?.navigate("/prelogin",);
     }, 500);
   }, [])
 

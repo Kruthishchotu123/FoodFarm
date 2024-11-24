@@ -7,16 +7,20 @@
         "./*"
       ],
       "@/components": [
-        "./app/components"
+        "./app/components/*"
       ],
       "@/constants": [
-        "./app/constants"
+        "./app/constants/*"
       ],
+      "@icons": [
+        "./assets/icons/*"
+      ]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "declarations.d.ts",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ]
