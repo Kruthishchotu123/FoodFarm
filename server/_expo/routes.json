@@ -1,0 +1,233 @@
+{
+  "apiRoutes": [],
+  "htmlRoutes": [
+    {
+      "file": "./prelogin/index.tsx",
+      "page": "/prelogin/index",
+      "namedRegex": "^/prelogin(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./home/index.tsx",
+      "page": "/home/index",
+      "namedRegex": "^/home(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./auth/index.tsx",
+      "page": "/auth/index",
+      "namedRegex": "^/auth(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./modal.tsx",
+      "page": "/modal",
+      "namedRegex": "^/modal(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./home/details.tsx",
+      "page": "/home/details",
+      "namedRegex": "^/home/details(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./auth/details.tsx",
+      "page": "/auth/details",
+      "namedRegex": "^/auth/details(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "expo-router/build/views/Sitemap.js",
+      "page": "/_sitemap",
+      "namedRegex": "^/_sitemap(?:/)?$",
+      "routeKeys": {},
+      "generated": true
+    },
+    {
+      "file": "./style/theme.ts",
+      "page": "/style/theme",
+      "namedRegex": "^/style/theme(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/Route.js",
+      "page": "/Utils/Route",
+      "namedRegex": "^/Utils/Route(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./style/scaler.ts",
+      "page": "/style/scaler",
+      "namedRegex": "^/style/scaler(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./splash/index.tsx",
+      "page": "/splash/index",
+      "namedRegex": "^/splash(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/Config.js",
+      "page": "/Utils/Config",
+      "namedRegex": "^/Utils/Config(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/Common.js",
+      "page": "/Utils/Common",
+      "namedRegex": "^/Utils/Common(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/Colors.js",
+      "page": "/Utils/Colors",
+      "namedRegex": "^/Utils/Colors(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/linking.ts",
+      "page": "/Utils/linking",
+      "namedRegex": "^/Utils/linking(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/Dimesions.js",
+      "page": "/Utils/Dimesions",
+      "namedRegex": "^/Utils/Dimesions(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./Utils/Constants.js",
+      "page": "/Utils/Constants",
+      "namedRegex": "^/Utils/Constants(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./constants/Colors.ts",
+      "page": "/constants/Colors",
+      "namedRegex": "^/constants/Colors(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/Themed.tsx",
+      "page": "/components/Themed",
+      "namedRegex": "^/components/Themed(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/Loader.js",
+      "page": "/components/Loader",
+      "namedRegex": "^/components/Loader(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/atom/Hr.tsx",
+      "page": "/components/atom/Hr",
+      "namedRegex": "^/components/atom/Hr(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./style/device-helper.ts",
+      "page": "/style/device-helper",
+      "namedRegex": "^/style/device\\-helper(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/atom/index.tsx",
+      "page": "/components/atom/index",
+      "namedRegex": "^/components/atom(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/StyledText.tsx",
+      "page": "/components/StyledText",
+      "namedRegex": "^/components/StyledText(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/ExternalLink.tsx",
+      "page": "/components/ExternalLink",
+      "namedRegex": "^/components/ExternalLink(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/molecule/Icon.tsx",
+      "page": "/components/molecule/Icon",
+      "namedRegex": "^/components/molecule/Icon(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/molecule/index.tsx",
+      "page": "/components/molecule/index",
+      "namedRegex": "^/components/molecule(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/useColorScheme.web.ts",
+      "page": "/components/useColorScheme",
+      "namedRegex": "^/components/useColorScheme(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/EditScreenInfo.tsx",
+      "page": "/components/EditScreenInfo",
+      "namedRegex": "^/components/EditScreenInfo(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/molecule/Header.tsx",
+      "page": "/components/molecule/Header",
+      "namedRegex": "^/components/molecule/Header(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/molecule/Button.tsx",
+      "page": "/components/molecule/Button",
+      "namedRegex": "^/components/molecule/Button(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./style-dictionary-dist/tokens.js",
+      "page": "/style-dictionary-dist/tokens",
+      "namedRegex": "^/style\\-dictionary\\-dist/tokens(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/molecule/RHFInput.tsx",
+      "page": "/components/molecule/RHFInput",
+      "namedRegex": "^/components/molecule/RHFInput(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/useClientOnlyValue.web.ts",
+      "page": "/components/useClientOnlyValue",
+      "namedRegex": "^/components/useClientOnlyValue(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./style-dictionary-dist/momoStyle.js",
+      "page": "/style-dictionary-dist/momoStyle",
+      "namedRegex": "^/style\\-dictionary\\-dist/momoStyle(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./components/molecule/FlabelInput.tsx",
+      "page": "/components/molecule/FlabelInput",
+      "namedRegex": "^/components/molecule/FlabelInput(?:/)?$",
+      "routeKeys": {}
+    }
+  ],
+  "notFoundRoutes": [
+    {
+      "file": "expo-router/build/views/Unmatched.js",
+      "page": "/+not-found",
+      "namedRegex": "^(?:/(?<notfound>.+?))?(?:/)?$",
+      "routeKeys": {
+        "notfound": "not-found"
+      },
+      "generated": true
+    }
+  ]
+}
