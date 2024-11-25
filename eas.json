@@ -1,37 +1,55 @@
 {
   "cli": {
-    "version": ">= 3.6.0"
+    "version": ">= 5.9.3",
+    "appVersionSource": "remote"
   },
   "build": {
+    "base": {
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    },
     "development": {
-      "channel": "main",
+      "channel": "development",
       "developmentClient": true,
       "distribution": "internal",
       "ios": {
-        "resourceClass": "m1-medium"
-      }
-    },
-    "preview": {
-      "channel": "main",
-      "distribution": "internal",
-      "ios": {
-        "resourceClass": "m1-medium"
-      }
-    },
-    "production": {
-      "channel": "main",
-      "ios": {
-        "resourceClass": "m1-medium"
-      }
-    },
-    "androidapk": {
-      "channel": "main",
+        "resourceClass": "internal"
+      },
       "android": {
         "buildType": "apk"
       }
+    },
+    "staging": {
+      "channel": "staging",
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preproduction": {
+      "channel": "preprod",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "extends": "base",
+      "env": {
+        "EXPO_PUBLIC_API_BASEURL": "https://foodfarm.com/api/v2"
+      },
+      "channel": "main",
+      "distribution": "store",
+      "autoIncrement": true
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
