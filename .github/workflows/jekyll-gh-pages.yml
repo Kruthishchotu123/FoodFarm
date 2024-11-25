@@ -1,0 +1,49 @@
+name: Web
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ⚙️ Set up repository
+        uses: actions/checkout@v2
+
+      - name: ❇️ Setup Node.js environment
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 16.x
+
+      - name: 🔷 Set up Expo
+        uses: expo/expo-github-action@v7
+        with:
+          expo-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🌐 Check for deploy keyword
+        id: check_message
+        run: |
+          echo "COMMIT_MESSAGE=${{ github.event.head_commit.message }}" >> $GITHUB_ENV
+          if [[ "${{ github.event.head_commit.message }}" != *"deploy"* ]]; then
+            echo "Commit message does not contain 'deploy'. Skipping deployment."
+            exit 0
+          fi
+
+      - name: 🌐 Export the app
+        if: ${{ env.COMMIT_MESSAGE && env.COMMIT_MESSAGE contains 'deploy' }}
+        run: |
+          git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          yarn deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
